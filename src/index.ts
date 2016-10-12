@@ -1,9 +1,9 @@
 import {run} from '@cycle/xstream-run';
 import {makeDOMDriver} from '@cycle/dom';
-// import BmiCalculator from './BmiCalculator';
+import Main from './main';
 
-// const main = BmiCalculator;
+const main = Main;
 
-run(, {
-  DOM: makeDOMDriver('#main-container')
+run(main, {
+  DOM: makeDOMDriver('#app')
 });

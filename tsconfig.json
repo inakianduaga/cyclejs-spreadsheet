@@ -5,7 +5,7 @@
     "sourceMap": true,
     "declaration": true,
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": false,
+    "suppressImplicitAnyIndexErrors": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "allowUnreachableCode": false,
@@ -14,15 +14,23 @@
     "allowUnusedLabels": false,
     "noUnusedParameters": true,
     "module": "commonjs",
+    "jsx": "react",
+    "reactNamespace": "JSX",
     "target": "ES5",
-    "outDir": "lib/"
+    "outDir": "lib/",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+    // "types": [
+    //   "node", // this allows us to use require globally but then breaks ES6 native calls, so we might need to add that
+    // ]
+
   },
   "formatCodeOptions": {
     "indentSize": 2,
     "tabSize": 2
   },
   "files": [
-    //  "typings/index.d.ts",
     "src/index.ts"
   ]
 }
