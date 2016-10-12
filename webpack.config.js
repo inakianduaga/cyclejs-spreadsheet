@@ -14,6 +14,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loaders: [
+          'babel?cacheDirectory',
           'awesome-typescript-loader'
         ],
       },
